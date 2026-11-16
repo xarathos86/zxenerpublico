@@ -1,0 +1,9 @@
+﻿ECONOMÍA DEL CARBONO — VERSIÓN INTEGRADA
+Abrir index.html en un navegador. No requiere instalación.
+Contenido de 12 láminas transcrito a texto HTML, con fórmulas y esquemas SVG.
+Controles: búsqueda, navegación, comparación de arquitecturas, superposición,
+inclinación foliar, selección de curvas, repaso y progreso local.
+Los gráficos reconstruidos no contienen datos experimentales digitalizados;
+sus indicaciones de reconstrucción visual se muestran junto al gráfico.
+Pendiente: publicación remota y revisión visual en navegador. Las herramientas
+de alojamiento de Sites no están disponibles en esta sesión.
