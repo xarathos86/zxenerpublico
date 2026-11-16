@@ -1,3 +1,4 @@
+// Colección integrada: 14 guías. Actualización 2026-11-16.
 const BASE=new URL('./',self.location.href).pathname;const DB='private-site-'+BASE;let memo;const manifest=()=>memo||(memo=fetch(BASE+'manifest.json',{cache:'no-store'}).then(r=>r.json()));
 function db(){return new Promise((ok,no)=>{const r=indexedDB.open(DB,1);r.onupgradeneeded=()=>r.result.createObjectStore('access');r.onsuccess=()=>ok(r.result);r.onerror=()=>no(r.error)})}
 async function saved(value,write=false){const d=await db();return new Promise((ok,no)=>{const t=d.transaction('access',write?'readwrite':'readonly'),s=t.objectStore('access');let result;const r=write?(value?s.put(value,'session'):s.delete('session')):s.get('session');r.onsuccess=()=>result=r.result;t.oncomplete=()=>{d.close();ok(result)};t.onerror=()=>{d.close();no(t.error)}})}
